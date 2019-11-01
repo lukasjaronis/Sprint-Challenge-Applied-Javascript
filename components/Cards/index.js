@@ -18,7 +18,7 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
-
+const cardEntryPoint = document.querySelector('.card-container'); // entry point for HTML
 function GetArticle(object) {
 
 
@@ -42,6 +42,14 @@ cardAuthor.appendChild(cardImageDiv);
 cardImageDiv.appendChild(cardImage);
 newCard.appendChild(cardAuthorName);
 
+
+// setting up classes
+
+newCard.classList.add('card');
+cardHeadline.classList.add('headline');
+cardAuthor.classList.add('author');
+cardImageDiv.classList.add('img-container');
+cardEntryPoint.appendChild(newCard);
 
 return newCard;
 }
