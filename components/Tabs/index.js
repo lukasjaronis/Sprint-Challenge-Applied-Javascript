@@ -10,7 +10,7 @@
 
 
 
-entryPoint = document.querySelector('.topics');
+headerEntryPoint = document.querySelector('.topics');
 function TabCreator(e) { // e is just the items/elements we will pass in from the api through our function
 
 const create = e => document.createElement(e);
@@ -25,14 +25,14 @@ newTab.classList.add('tab');
 
 // appending
 
-entryPoint.appendChild(newTab); // we are adding the newTab div to the HTML entry point 
+headerEntryPoint.appendChild(newTab); // we are adding the newTab div to the HTML entry point 
 
 // set content
 
 newTab.textContent = e; // the text for the newTab will be passed into the data (our data is .topics)
 
 
-return entryPoint;
+return headerEntryPoint;
 }
 
 axios
