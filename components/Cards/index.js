@@ -33,5 +33,15 @@ let cardImageDiv = create('div'); // append this to cardAuthor
 let cardImage = create('img'); // append this to cardImageDiv
 let cardAuthorName = create('span');
 
+// appending elements
 
+newCard.appendChild(cardHeadline);
+newCard.appendChild(cardAuthor);
+newCard.appendChild(cardImageDiv);
+cardAuthor.appendChild(cardImageDiv);
+cardImageDiv.appendChild(cardImage);
+newCard.appendChild(cardAuthorName);
+
+
+return newCard;
 }
