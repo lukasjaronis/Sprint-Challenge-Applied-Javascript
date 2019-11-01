@@ -17,5 +17,10 @@ const create = e => document.create(e);
 
 let newTab = create('div');
 
+// setting up classes
+
+newTab.classList.add('tab');
+
+// appending
 
 }
