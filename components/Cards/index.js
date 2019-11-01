@@ -18,7 +18,11 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
-const cardEntryPoint = document.querySelector('.card-container'); // entry point for HTML
+
+
+
+
+const cardEntryPoint = document.querySelector('.cards-container'); // entry point for HTML
 function GetArticle(object) {
 
 
@@ -60,3 +64,15 @@ cardAuthorName.textContent = object.authorName;
 
 return newCard;
 }
+
+axios
+.get("https://lambda-times-backend.herokuapp.com/articles")
+.then((dataResponse => { // we get a response from ^
+console.log(dataResponse);
+dataResponse.data.articles.javascript.forEach(item => GetArticle(item));
+dataResponse.data.articles.bootstrap.forEach(item => GetArticle(item));
+dataResponse.data.articles.technology.forEach(item => GetArticle(item));
+dataResponse.data.articles.jquery.forEach(item => GetArticle(item));
+dataResponse.data.articles.node.forEach(item => GetArticle(item));
+
+}))
