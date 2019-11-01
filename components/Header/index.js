@@ -20,6 +20,12 @@ const create = e => document.createElement(e);
  let headerTitle = create('h1');
  let headerTemp = create('span');
 
+// appending elements
+
+newHeader.appendChild(headerDate);
+newHeader.appendChild(headerTitle);
+newHeader.appendChild(headerTemp);
 
 
+return newHeader
 }
