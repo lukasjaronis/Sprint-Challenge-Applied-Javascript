@@ -13,6 +13,8 @@ function Header() {
 
 const create = e => document.createElement(e);
 
+classCreate = e => classList.add(e);
+
  // setting up new elements
 
  let newHeader = create('div');
@@ -25,6 +27,12 @@ const create = e => document.createElement(e);
 newHeader.appendChild(headerDate);
 newHeader.appendChild(headerTitle);
 newHeader.appendChild(headerTemp);
+
+// setting up classes
+
+newHeader.classCreate('header');
+headerDate.classCreate('date');
+headerTemp.classCreate('temp');
 
 
 return newHeader
