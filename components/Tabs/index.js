@@ -7,3 +7,15 @@
 //
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
+
+
+function TabCreator(e) { // e is just the items'elements we will pass in from the api through our function
+
+const create = e => document.create(e);
+
+// setting up new elements
+
+let newTab = create('div');
+
+
+}
