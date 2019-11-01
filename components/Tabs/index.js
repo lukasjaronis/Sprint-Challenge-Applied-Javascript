@@ -9,6 +9,8 @@
 //    <div class="tab">topic here</div>
 
 
+
+entryPoint = document.querySelector('.topics');
 function TabCreator(e) { // e is just the items'elements we will pass in from the api through our function
 
 const create = e => document.create(e);
@@ -22,5 +24,10 @@ let newTab = create('div');
 newTab.classList.add('tab');
 
 // appending
+entryPoint.appendChild(newTab); // we are adding the newTab div to the HTML entry point 
+
+//
+
+
 
 }
