@@ -51,5 +51,12 @@ cardAuthor.classList.add('author');
 cardImageDiv.classList.add('img-container');
 cardEntryPoint.appendChild(newCard);
 
+
+// set content
+
+cardImage.src = object.authorPhoto;
+cardHeadline.textContent = object.headline;
+cardAuthorName.textContent = object.authorName;
+
 return newCard;
 }
