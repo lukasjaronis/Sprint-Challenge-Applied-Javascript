@@ -17,3 +17,21 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+
+function GetArticle(object) {
+
+
+const create = e => document.createElement(e);
+
+// setting up new elements
+
+let newCard = create('div');
+let cardHeadline = create('div');
+let cardAuthor = create('div');
+let cardImageDiv = create('div'); // append this to cardAuthor
+let cardImage = create('img'); // append this to cardImageDiv
+let cardAuthorName = create('span');
+
+
+}
